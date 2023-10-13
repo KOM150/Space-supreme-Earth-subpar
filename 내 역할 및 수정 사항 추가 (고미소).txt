@@ -1,4 +1,6 @@
 내 역할:
+1. 게임 기획안 제작
+2. Mini Game Version1
 Shooting Space Ship 씬 제작
 
 보완 사항 추가:

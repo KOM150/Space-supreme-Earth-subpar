@@ -6,5 +6,5 @@ Shooting Space Ship 씬 제작
 보완 사항 추가:
 1. 불필요한 파일 삭제 및 코드 수정
 2. Game Limit Time 기능 추가
-3. Game Over Zone 추가 *Boundary에서 벗어나면, Game이 종료돼야 함
+3. Game Over Zone 추가 *하단 Boundary에서 벗어나면, Game이 종료돼야 함
 4. 사운드 변경

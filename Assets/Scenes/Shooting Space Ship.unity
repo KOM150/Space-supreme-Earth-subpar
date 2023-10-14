@@ -397,7 +397,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 7154904358619745205, guid: b560745ce67eb74498fc6800ed24ada1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -430,7 +433,7 @@ MonoBehaviour:
   speed: 13
   Bolt: {fileID: 146826, guid: 1240db91d7f614a458b2445b4f6c83dd, type: 3}
   shotSpawn: {fileID: 579094838}
-  fireRate: 0
+  fireRate: 0.25
 --- !u!1 &719034975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,7 +1371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9528302, g: 0.78347087, b: 0.0059925243, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1377,7 +1380,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 45
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0

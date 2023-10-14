@@ -84,6 +84,7 @@ public class Done_GameController : MonoBehaviour
             if (gameOver)
             {
                 memoText.text = "Press 'R' for Restart";
+                memoText.fontSize = 36;
                 restart = true;
                 break; //While문 탈출
             }
@@ -107,6 +108,9 @@ public class Done_GameController : MonoBehaviour
     public void GameOver()
     {
         subtitleText.text = "Game Over!";
+        subtitleText.fontSize = 36;
+        subtitleText.fontStyle = FontStyle.Bold;
+        subtitleText.color = Color.yellow;
         gameOver = true;
     }
 }

@@ -85,6 +85,7 @@ public class Done_GameController : MonoBehaviour
             {
                 memoText.text = "Press 'R' for Restart";
                 memoText.fontSize = 36;
+                memoText.color = Color.white;
                 restart = true;
                 break; //While문 탈출
             }

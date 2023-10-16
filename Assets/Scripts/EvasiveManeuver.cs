@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Done_EvasiveManeuver : MonoBehaviour
+public class EvasiveManeuver : MonoBehaviour
 {
 	public Done_Boundary boundary; //영역 제한
 	public float tilt;

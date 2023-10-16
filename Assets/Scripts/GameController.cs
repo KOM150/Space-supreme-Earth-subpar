@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.UI;
 
-public class Done_GameController : MonoBehaviour
+public class GameController : MonoBehaviour
 {
     public GameObject[] hazards; //소환 오브젝트 배열 
     public Vector3 spawnValues; //소환 오브젝트 영역 제한 (x, y, z)

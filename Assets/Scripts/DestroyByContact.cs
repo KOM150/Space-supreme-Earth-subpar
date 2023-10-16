@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Done_DestroyByContact : MonoBehaviour
+public class DestroyByContact : MonoBehaviour
 {
     // 다른 오브젝트와 상호작용할 때 사용할 파티클 오브젝트를 지정
     public GameObject explosion; // 자신의 폭발 효과
@@ -11,7 +11,7 @@ public class Done_DestroyByContact : MonoBehaviour
     public int scoreValue;
 
     // 게임 컨트롤러 스크립트에 접근하기 위한 변수
-    private Done_GameController gameController;
+    private GameController gameController;
 
     /*
      게임에서 플레이어가 점수를 얻거나 게임이 종료되었을 때 > 이 정보를 다른 스크립트로 전달하고 업데이트해야 함. 
@@ -27,7 +27,7 @@ public class Done_DestroyByContact : MonoBehaviour
         if (gameControllerObject != null)
         {
             //새롭게 GameController 속성 할당 > 게임 내에서 게임 상태 및 점수를 업데이트하기 위해 사용
-            gameController = gameControllerObject.GetComponent<Done_GameController>();
+            gameController = gameControllerObject.GetComponent<GameController>();
         }
 
         // gameController를 찾지 못한 경우 디버그 메시지 출력

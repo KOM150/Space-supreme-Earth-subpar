@@ -3,7 +3,7 @@ using System.Collections;
 
 // 총알 발사를 위한 코드
 
-public class Done_WeaponController : MonoBehaviour
+public class WeaponController : MonoBehaviour
 {
     public GameObject shot; // 발사될 총알 프리팹
     public Transform shotSpawn; // 총알의 생성 위치

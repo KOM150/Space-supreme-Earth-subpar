@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-public class Tmp_PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float speed = 13.0f;
     public GameObject Bolt;

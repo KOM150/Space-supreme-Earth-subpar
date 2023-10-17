@@ -55,3 +55,4 @@ public class PlayerController : MonoBehaviour
 		transform.Translate(Vector3.forward/*Z축*/ * vertical_input /*방향*/ * distance_per_frame);
 	}
 }
+

@@ -5,16 +5,17 @@ using System.Collections;
 
 public class WeaponController : MonoBehaviour
 {
-    public GameObject shot; // 발사될 총알 프리팹
+    public GameObject shot; // 발사될 총알 (프리팹)
     public Transform shotSpawn; // 총알의 생성 위치
     public float fireRate; // 총알 발사 속도
-    public float delay; // 첫 총알 발사 지
+    public float delay; // 초기 지연 시간
 
     void Start()
     {
+
         InvokeRepeating("Fire", delay, fireRate);
-        // InvokeRepeating ( "Methodname" , 초기 지연 시간, Method를 반복 호출할 간격)
-        // "Fire" Method를 게임 시작 후 delay 동안 대기 후 fireRate 간격으로 "Fire" Method 호출
+        // InvokeRepeating ( 메서드 명 , 초기 지연 시간, Method를 반복 호출할 간격)
+        // 게임 시작 후 delay 동안 대기한 뒤, fireRate 간격으로 "Fire" Method 호출
     }
 
     void Fire()

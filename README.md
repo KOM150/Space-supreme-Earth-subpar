@@ -12,8 +12,8 @@
 
 ## Mini Game Version 1.1
 - Kohmeso 브런치
-게임 개발 기록 (Unity Package) 파일에서 "Mini Game Version 1.1" 유니티 패키지가 첨부돼 있습니다.
-본 Unity 프로젝트의 미니 게임 씬은 "Assets > Scenes > Shooting Space Ship"에 있습니다.
+- 게임 개발 기록 (Unity Package) 파일에서 "Mini Game Version 1.1" 유니티 패키지가 첨부돼 있습니다.
+- 본 Unity 프로젝트의 미니 게임 씬은 "Assets > Scenes > Shooting Space Ship"에 있습니다.
 
 ## Tycoon Game Version 1.
 

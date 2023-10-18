@@ -35,7 +35,7 @@ GameController 스크립트의 소환 시스템에는 3개의 소행성 프리�
 물론 적 프리펩에도 DestoryByContact가 적용됐습니다. 그리고 적에는 WeaponController가 적용돼, 적은 Enemy Bolt를 게임 도중 일정한 간격으로 총알을 발사합니다.
 적은 특정한 회피 동작을 구현하는데, 이는 EvasiveManeuver 스크립트로 제어하였습니다.
 ---
-다음은 DestoryByContact 스크립트인데요. DestoryByContact는 플레이어가 소행성이나 적을 만나면 폭발 효과가 생성되도록 하는 스크립트인데, 해당 폭발 효과는 다음의 파티클 효과가 적용된 VFX로 적용했습니다. 이러한 VFX는 DestoryByTime으로 단 2초만 VFX가 적용되도록 하였습니다.
+다음은 DestoryByContact 스크립트인데요. DestoryByContact는 플레이어가 소행성이나 적을 만나면 폭발 효과가 생성되도록 하는 스크립트인데, 폭발 효과는 다음의 파티클 효과가 적용된 VFX로 적용했습니다. 이러한 VFX는 DestoryByTime으로 단 2초만 VFX가 적용되도록 하였습니다.
 ---
 그리고 다음 UI은 GameController에 적용돼 관리됩니다.
 ---

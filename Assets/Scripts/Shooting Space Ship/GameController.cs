@@ -24,24 +24,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        gameOver = false;
-        restart = false;
-
-        memoText.text = ""; //게임 실행하면 화면에서 사라짐
-        subtitleText.text = "";
-        
-        //점수 시스템
-        score = 0;
-        UpdateScore();
-
-        //소환 및 재실행 시스템
-        //코루틴
-        /*
-          1. 게임 루프의 차단 방지: 코루틴을 사용하면 긴 작업을 수행해도 게임 루프를 차단하지 않고 계속 실행 > 부드러운 게임 실행 유지
-          2. 시간 지연 및 간격 제어: yield return new WaitForSeconds(time)
-          3. 병렬 작업 처리
-         */
-        StartCoroutine(SpawnWaves());
+        StartCoroutine(WaitAndStart());
     }
 
     void UpdateScore()
@@ -56,6 +39,30 @@ public class GameController : MonoBehaviour
     {
         score += newScoreValue;
         UpdateScore();
+    }
+
+    IEnumerator WaitAndStart()
+    {
+        yield return new WaitForSeconds(0.5f); //0.5초 대기 > 게임 실행
+
+        gameOver = false;
+        restart = false;
+
+        memoText.text = ""; //게임 실행하면 화면에서 사라짐
+        subtitleText.text = "";
+
+        //점수 시스템
+        score = 0;
+        UpdateScore();
+
+        //소환 및 재실행 시스템
+        //코루틴
+        /*
+          1. 게임 루프의 차단 방지: 코루틴을 사용하면 긴 작업을 수행해도 게임 루프를 차단하지 않고 계속 실행 > 부드러운 게임 실행 유지
+          2. 시간 지연 및 간격 제어: yield return new WaitForSeconds(time)
+          3. 병렬 작업 처리
+         */
+        StartCoroutine(SpawnWaves());
     }
 
     IEnumerator SpawnWaves()

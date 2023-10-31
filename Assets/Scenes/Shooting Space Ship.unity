@@ -1113,6 +1113,8 @@ MonoBehaviour:
   titleText: {fileID: 1171993751}
   memoText: {fileID: 2126980976}
   subtitleText: {fileID: 1363831537}
+  gameOver: 0
+  gameOverScore: 0
 --- !u!4 &1904691132
 Transform:
   m_ObjectHideFlags: 0

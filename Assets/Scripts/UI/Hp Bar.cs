@@ -7,19 +7,32 @@ using UnityEngine.UI;
 public class HpBarController : MonoBehaviour
 {
     float curHealth = 50; // 나중에 과거 Data랑 연동해야 함
-    float maxHealth = 100; 
     public Slider HpBarSlider;
-    public GameController shootingSpaceShip;
+    private GameController gameController;
 
     void Start()
     {
-        shootingSpaceShip = GetComponent<GameController>();
+        GameObject gameControllerObject = GameObject.FindGameObjectWithTag("GameController");
+
+        if (gameControllerObject != null)
+        {
+            gameController = gameControllerObject.GetComponent<GameController>();
+        }
+
+        if (gameController == null)
+        {
+            Debug.Log("Can't find 'GameController' script");
+        }
+
         SetHp(curHealth);
     }
 
     private void Update()
     {
-        UpdateScore(10);
+        if (gameController.gameOver)
+        {
+            HpBarSlider.value += gameController.gameOverScore / 10;
+        }
     }
 
     public void SetHp(float score)
@@ -28,15 +41,5 @@ public class HpBarController : MonoBehaviour
         {
             HpBarSlider.value = score;
         }
-    }
-
-    public void UpdateScore(float damage)
-    {
-        /*
-        if (shootingSpaceShip != null && shootingSpaceShip.GameOver()) //Error
-        {
-            SetHp(shootingSpaceShip.score/10);
-        }
-        */
     }
 }

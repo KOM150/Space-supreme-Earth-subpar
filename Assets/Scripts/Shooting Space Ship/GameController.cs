@@ -18,9 +18,10 @@ public class GameController : MonoBehaviour
     public Text memoText;
     public Text subtitleText;
 
-    private bool gameOver; //게임 종료 여부
+    public bool gameOver; //게임 종료 여부
     private bool restart; //재실행 여부
     private int score;
+    public int gameOverScore;
 
     void Start()
     {
@@ -90,8 +91,8 @@ public class GameController : MonoBehaviour
             //재실행 시스템
             if (gameOver)
             {
-                memoText.text = "Press 'R' for Restart";
-                memoText.fontSize = 36;
+                memoText.text = "Press 'R' for GameOver";
+                memoText.fontSize = 30;
                 memoText.color = Color.white;
                 restart = true;
                 break; //While문 탈출
@@ -101,14 +102,14 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        //재실행 시스템
+        //재실행 시 Tycoon Scene으로
         if (restart)
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
                 //SceneManager.LoadScene() : 현재 활성화된 씬을 다시 로드함으로써 씬을 다시 시작하거나 초기 상태
                 //SceneManager.GetActiveScene().buildIndex : 현재 활성화된 씬의 빌드 인덱스
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene("Tycoon Scene");
             }
         }
     }
@@ -120,5 +121,6 @@ public class GameController : MonoBehaviour
         subtitleText.fontStyle = FontStyle.Bold;
         subtitleText.color = Color.yellow;
         gameOver = true;
+        gameOverScore = score;
     }
 }

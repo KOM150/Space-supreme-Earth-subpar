@@ -77,7 +77,7 @@ public class GameController : MonoBehaviour
 
             if (gameOver)
             {
-                memoText.text = "Press 'R' for GameOver";
+                memoText.text = "Press 'R' for GameWin";
                 memoText.fontSize = 30;
                 memoText.color = Color.white;
                 restart = true;
@@ -98,9 +98,19 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void GameOver()
+    public void GameWin() //Timer에 적용
     {
-        subtitleText.text = "Game Over!";
+        subtitleText.text = "Mission: Win!";
+        subtitleText.fontSize = 36;
+        subtitleText.fontStyle = FontStyle.Bold;
+        subtitleText.color = Color.yellow;
+        gameOver = true;
+    }
+
+    public void GameLose() //DestroyByContact에 적용
+    {
+        gameManager._score = -100;
+        subtitleText.text = "Mission: Lose!";
         subtitleText.fontSize = 36;
         subtitleText.fontStyle = FontStyle.Bold;
         subtitleText.color = Color.yellow;

@@ -9,7 +9,6 @@ public class DestroyByContact : MonoBehaviour
     public int scoreValue;
 
     private GameController gameController;
-    private GameManager gameManager;
 
     void Start()
     {
@@ -25,9 +24,6 @@ public class DestroyByContact : MonoBehaviour
         {
             Debug.Log("Can't find 'GameController' script");
         }
-
-        //
-        gameManager = GameManager.Instance;
     }
 
     void OnTriggerEnter(Collider other)

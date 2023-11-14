@@ -22,6 +22,7 @@ public class GameController : MonoBehaviour
 
     //
     private GameManager gameManager;
+    private int score;
 
     void Start()
     {
@@ -31,12 +32,12 @@ public class GameController : MonoBehaviour
 
     void UpdateScore()
     {
-        titleText.text = "Score: " + gameManager._score;
+        titleText.text = "Score: " + score;
     }
 
     public void AddScore(int newScoreValue)
     {
-        gameManager._score += newScoreValue;
+        score += newScoreValue;
         UpdateScore();
     }
 
@@ -50,7 +51,7 @@ public class GameController : MonoBehaviour
         memoText.text = "";
         subtitleText.text = "";
 
-        gameManager._score = 0;
+        score = 0;
         UpdateScore();
 
         StartCoroutine(SpawnWaves());
@@ -104,16 +105,19 @@ public class GameController : MonoBehaviour
         subtitleText.fontSize = 36;
         subtitleText.fontStyle = FontStyle.Bold;
         subtitleText.color = Color.yellow;
+
+        gameManager._score += score / 10;
         gameOver = true;
     }
 
     public void GameLose() //DestroyByContact에 적용
     {
-        gameManager._score = -100;
         subtitleText.text = "Mission: Lose!";
         subtitleText.fontSize = 36;
         subtitleText.fontStyle = FontStyle.Bold;
         subtitleText.color = Color.yellow;
+
+        gameManager._score += -10;
         gameOver = true;
     }
 }

@@ -39,7 +39,11 @@ public class Timer : MonoBehaviour
             if (LimitTime <= 0)
             {
                 player.SetActive(false);
+<<<<<<< HEAD
                 gameController.GameWin();
+=======
+                gameController.GameOver();
+>>>>>>> joinyea
             }
             else
             {

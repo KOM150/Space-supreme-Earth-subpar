@@ -33,7 +33,11 @@ public class DestroyByBoundary : MonoBehaviour
         if (other.tag == "Player")
         {
             Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
+<<<<<<< HEAD
             gameController.GameLose();
+=======
+            gameController.GameOver();
+>>>>>>> joinyea
         }
         else
         {

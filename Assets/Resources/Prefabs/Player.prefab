@@ -10,11 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 112598, guid: cf1f91c441868ff4cb428887f1fefb5e, type: 3}
       propertyPath: m_Name
+<<<<<<< HEAD:Assets/Resources/Prefabs/Player.prefab
 <<<<<<< HEAD
       value: Player
 =======
       value: Player Variant
 >>>>>>> a7142496aaa562afeeac970070425f555535135c
+=======
+      value: Player
+>>>>>>> joinyea:Assets/Prefabs/Player.prefab
       objectReference: {fileID: 0}
     - target: {fileID: 404718, guid: cf1f91c441868ff4cb428887f1fefb5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,6 +71,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
+<<<<<<< HEAD:Assets/Resources/Prefabs/Player.prefab
 <<<<<<< HEAD
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf1f91c441868ff4cb428887f1fefb5e, type: 3}
@@ -110,3 +115,7 @@ Transform:
   m_PrefabInstance: {fileID: 5803308952387813439}
   m_PrefabAsset: {fileID: 0}
 >>>>>>> a7142496aaa562afeeac970070425f555535135c
+=======
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf1f91c441868ff4cb428887f1fefb5e, type: 3}
+>>>>>>> joinyea:Assets/Prefabs/Player.prefab

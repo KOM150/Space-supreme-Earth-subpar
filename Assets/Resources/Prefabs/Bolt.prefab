@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 443036}
   - component: {fileID: 5405476}
   - component: {fileID: 13652138}
+<<<<<<< HEAD:Assets/Resources/Prefabs/Bolt.prefab
 <<<<<<< HEAD
   - component: {fileID: -6307497223273648499}
 =======
@@ -50,6 +51,9 @@ GameObject:
   - component: {fileID: 11486922}
   - component: {fileID: 11422520}
 >>>>>>> a7142496aaa562afeeac970070425f555535135c
+=======
+  - component: {fileID: -6307497223273648499}
+>>>>>>> joinyea:Assets/Prefabs/Bolt.prefab
   m_Layer: 0
   m_Name: Bolt
   m_TagString: Bullet
@@ -123,11 +127,15 @@ CapsuleCollider:
   m_Height: 0.76
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Resources/Prefabs/Bolt.prefab
 <<<<<<< HEAD
 --- !u!114 &-6307497223273648499
 =======
 --- !u!114 &11471300
 >>>>>>> a7142496aaa562afeeac970070425f555535135c
+=======
+--- !u!114 &-6307497223273648499
+>>>>>>> joinyea:Assets/Prefabs/Bolt.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,6 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 146826}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD:Assets/Resources/Prefabs/Bolt.prefab
 <<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 7f7850f24249e4056b2189de03ae584c, type: 3}
   m_Name: 
@@ -172,6 +181,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multiplier: 0.99
 >>>>>>> a7142496aaa562afeeac970070425f555535135c
+=======
+  m_Script: {fileID: 11500000, guid: 7f7850f24249e4056b2189de03ae584c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+>>>>>>> joinyea:Assets/Prefabs/Bolt.prefab
 --- !u!1 &149658
 GameObject:
   m_ObjectHideFlags: 0

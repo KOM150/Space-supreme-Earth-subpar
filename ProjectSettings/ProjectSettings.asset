@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 99d9f1f3748b1854aa8200271cd7e41c
+  productGUID: 44ef3b3dc740b2f408af486da27c2f7a
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Space supreme, Earth subpar
+  productName: SSES02
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -861,14 +861,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Space supreme, Earth subpar
+  metroPackageName: SSES02
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Space supreme, Earth subpar
+  metroApplicationDescription: SSES02
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -937,10 +937,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 070e47d5-8741-4654-b099-3b78f06b8ffd
+  cloudProjectId: 90af1568-6bbd-47c2-9c99-a93479993f8a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Space supreme, Earth subpar
+  projectName: SSES02
   organizationId: bluearth0502-gmail-com
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

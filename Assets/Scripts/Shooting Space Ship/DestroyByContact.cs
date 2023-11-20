@@ -16,7 +16,7 @@ public class DestroyByContact : MonoBehaviour
 
         if (gameControllerObject != null)
         {
-            
+
             gameController = gameControllerObject.GetComponent<GameController>();
         }
 

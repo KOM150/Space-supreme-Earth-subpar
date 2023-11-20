@@ -95,9 +95,12 @@ GameObject:
   - component: {fileID: 5400036}
   - component: {fileID: 13624146}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   - component: {fileID: 11408036}
 >>>>>>> a7142496aaa562afeeac970070425f555535135c
+=======
+>>>>>>> a04964c3c3cfec33477f1ab6eb78284d37a34827
   - component: {fileID: 8246070}
   m_Layer: 0
   m_Name: Player
@@ -175,6 +178,7 @@ CapsuleCollider:
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0.55}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 --- !u!114 &11408036
 MonoBehaviour:
@@ -201,6 +205,8 @@ MonoBehaviour:
   fireRate: 0.3
   smoothing: 5
 >>>>>>> a7142496aaa562afeeac970070425f555535135c
+=======
+>>>>>>> a04964c3c3cfec33477f1ab6eb78284d37a34827
 --- !u!82 &8246070
 AudioSource:
   m_ObjectHideFlags: 0

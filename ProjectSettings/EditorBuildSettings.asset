@@ -7,12 +7,26 @@ EditorBuildSettings:
 <<<<<<< HEAD
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Shooting Space Ship.unity
+    guid: 53e6a0e5da8a749c596f61dfc60d86ae
+  - enabled: 1
     path: Assets/Scenes/Tycoon Scene.unity
     guid: 87cc86e5e50bb13408d1334aeb30ade5
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Shooting Space Ship.unity
     guid: 53e6a0e5da8a749c596f61dfc60d86ae
 =======
   m_Scenes: []
 >>>>>>> a7142496aaa562afeeac970070425f555535135c
+=======
+    path: Assets/Scenes/Story/GameWin.unity
+    guid: 8ee6c989b61e782439f132fca0cac4d1
+  - enabled: 1
+    path: Assets/Scenes/Story/GameLose.unity
+    guid: 156e99997b5c2eb408f157b57c617c12
+  - enabled: 1
+    path: Assets/Scenes/Storys/Story.unity
+    guid: d94a8512a76f8904fa26963b0481dbdf
+>>>>>>> 800b034f8a20ccded625b89aaeec2c140a0242ad
   m_configObjects: {}

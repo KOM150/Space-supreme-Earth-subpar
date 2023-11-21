@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour
     public bool gameOver;
     private bool restart;
 
-    //
+    private PlayerController playercontroller;
     private GameManager gameManager;
 
     void Start()
@@ -100,6 +100,8 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
+        GameObject.Find("Player").GetComponent<PlayerController>().buttonFire=false;
+
         subtitleText.text = "Game Over!";
         subtitleText.fontSize = 36;
         subtitleText.fontStyle = FontStyle.Bold;

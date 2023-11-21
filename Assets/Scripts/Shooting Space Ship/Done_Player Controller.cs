@@ -24,11 +24,11 @@ public class Done_PlayerController : MonoBehaviour
 
     private float nextFire;
 
-
+    public bool buttonFire = false;
 
     void Update()
     {
-        bool buttonFire = false;
+        
 
         if (Input.GetButton("Fire1") || Input.GetButton("Fire2"))
         {
@@ -53,8 +53,8 @@ public class Done_PlayerController : MonoBehaviour
         float vertical_input = Input.GetAxis("Vertical");
         float distance_per_frame = speed * Time.deltaTime;
 
-        transform.Translate(Vector3.right * horizontal_input * distance_per_frame); //Player ÀÌµ¿
-        transform.Translate(Vector3.forward/*ZÃà*/ * vertical_input * distance_per_frame);
+        transform.Translate(Vector3.right * horizontal_input * distance_per_frame); //Player ï¿½Ìµï¿½
+        transform.Translate(Vector3.forward/*Zï¿½ï¿½*/ * vertical_input * distance_per_frame);
 
         /*
 		float moveHorizontal = Input.GetAxis ("Horizontal");

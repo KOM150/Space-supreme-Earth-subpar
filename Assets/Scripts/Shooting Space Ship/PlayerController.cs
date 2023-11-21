@@ -11,11 +11,14 @@ public class PlayerController : MonoBehaviour
 
 	private float nextFire; //무한 발사 방지 (시간 제한)
 
+	public bool buttonFire;
+	public GameController gameController;
+
 	void Update()
 	{
-		bool buttonFire = false;
-
-		if (Input.GetButton("Fire1"))
+		buttonFire = false;
+		
+		if(GameObject.Find("Game Controller").GetComponent<GameController>().gameOver==false && Input.GetButton("Fire1"))
 		{
 			buttonFire = true;
 		}

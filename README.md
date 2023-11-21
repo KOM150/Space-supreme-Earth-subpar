@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Space-supreme--Earth-subpar
  키우기 게임
 =======
@@ -26,3 +27,7 @@
 ## Tycoon Game Version 1.  
 
 >>>>>>> a7142496aaa562afeeac970070425f555535135c
+=======
+# Space-supreme-Earth-subpar
+키우기 게임
+>>>>>>> 800b034f8a20ccded625b89aaeec2c140a0242ad

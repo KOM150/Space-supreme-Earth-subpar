@@ -7,13 +7,13 @@ public class GameController : MonoBehaviour
 {
     public GameObject[] hazards;
     public Vector3 spawnValues;
-    public int hazardCount; 
+    public int hazardCount;
 
-    public float startWait; 
-    public float spawnWait; 
-    public float waveWait; 
+    public float startWait;
+    public float spawnWait;
+    public float waveWait;
 
-    public Text titleText; 
+    public Text titleText;
     public Text memoText;
     public Text subtitleText;
 
@@ -22,6 +22,7 @@ public class GameController : MonoBehaviour
 
     private PlayerController playercontroller;
     private GameManager gameManager;
+    private int score;
 
     void Start()
     {
@@ -31,12 +32,12 @@ public class GameController : MonoBehaviour
 
     void UpdateScore()
     {
-        titleText.text = "Score: " + gameManager._score;
+        titleText.text = "Score: " + score;
     }
 
     public void AddScore(int newScoreValue)
     {
-        gameManager._score += newScoreValue;
+        score += newScoreValue;
         UpdateScore();
     }
 
@@ -50,7 +51,7 @@ public class GameController : MonoBehaviour
         memoText.text = "";
         subtitleText.text = "";
 
-        gameManager._score = 0;
+        score = 0;
         UpdateScore();
 
         StartCoroutine(SpawnWaves());
@@ -58,27 +59,27 @@ public class GameController : MonoBehaviour
 
     IEnumerator SpawnWaves()
     {
-        yield return new WaitForSeconds(startWait); 
+        yield return new WaitForSeconds(startWait);
 
         while (true)
         {
             for (int i = 0; i < hazardCount; i++)
             {
-                GameObject hazard = hazards[Random.Range(0, hazards.Length)]; 
-                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z); 
-                Quaternion spawnRotation = Quaternion.identity; 
+                GameObject hazard = hazards[Random.Range(0, hazards.Length)];
+                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+                Quaternion spawnRotation = Quaternion.identity;
 
                 Instantiate(hazard, spawnPosition, spawnRotation);
 
                 yield return new WaitForSeconds(spawnWait);
             }
 
-            yield return new WaitForSeconds(waveWait); 
+            yield return new WaitForSeconds(waveWait);
 
             if (gameOver)
             {
-                memoText.text = "Press 'R' for GameOver";
-                memoText.fontSize = 30;
+                memoText.text = "Press 'R' to end the Mini game";
+                memoText.fontSize = 14;
                 memoText.color = Color.white;
                 restart = true;
                 break;
@@ -98,14 +99,26 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void GameOver()
+    public void GameWin() //Timer에 적용
     {
-        GameObject.Find("Player").GetComponent<PlayerController>().buttonFire=false;
 
-        subtitleText.text = "Game Over!";
-        subtitleText.fontSize = 36;
+        subtitleText.text = "Mission: Win!";
+        subtitleText.fontSize = 32;
         subtitleText.fontStyle = FontStyle.Bold;
         subtitleText.color = Color.yellow;
+
+        gameManager._score += score / 10;
+        gameOver = true;
+    }
+
+    public void GameLose() //DestroyByContact에 적용
+    {
+        subtitleText.text = "Mission: Lose!";
+        subtitleText.fontSize = 32;
+        subtitleText.fontStyle = FontStyle.Bold;
+        subtitleText.color = Color.yellow;
+
+        gameManager._score += -10;
         gameOver = true;
     }
 }

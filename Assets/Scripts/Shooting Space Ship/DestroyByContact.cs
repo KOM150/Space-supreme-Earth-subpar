@@ -9,7 +9,6 @@ public class DestroyByContact : MonoBehaviour
     public int scoreValue;
 
     private GameController gameController;
-    private GameManager gameManager;
 
     void Start()
     {
@@ -17,7 +16,7 @@ public class DestroyByContact : MonoBehaviour
 
         if (gameControllerObject != null)
         {
-            
+
             gameController = gameControllerObject.GetComponent<GameController>();
         }
 
@@ -25,9 +24,6 @@ public class DestroyByContact : MonoBehaviour
         {
             Debug.Log("Can't find 'GameController' script");
         }
-
-        //
-        gameManager = GameManager.Instance;
     }
 
     void OnTriggerEnter(Collider other)
@@ -41,7 +37,7 @@ public class DestroyByContact : MonoBehaviour
         {
             Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
             //주의
-            gameController.GameOver();
+            gameController.GameLose();
         }
 
         if (explosion != null)

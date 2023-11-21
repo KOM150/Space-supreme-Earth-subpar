@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Shooting Space Ship.unity
+    guid: 53e6a0e5da8a749c596f61dfc60d86ae
+  - enabled: 1
+    path: Assets/Scenes/Tycoon Scene.unity
+    guid: 87cc86e5e50bb13408d1334aeb30ade5
+  - enabled: 1
+    path: Assets/Scenes/Firebase_auth.unity
+    guid: a3a6dee87157335408b07d6667cf433c
   m_configObjects: {}

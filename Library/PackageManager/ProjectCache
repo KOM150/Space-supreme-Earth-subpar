@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638361793950809370
-    m_Hash: 737565975
+      ticks: 638361750970708422
+    m_Hash: 3304982544
   m_LockFileStatus:
     m_FilePath: C:/Users/bm154/Desktop/Space-supreme-Earth-subpar/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638361793950819372
-    m_Hash: 279169494
+      ticks: 638361750970768436
+    m_Hash: 2285442691
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

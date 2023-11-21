@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -784,7 +784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1644899710}
-  - component: {fileID: 1644899709}
+  - component: {fileID: 1644899711}
   m_Layer: 0
   m_Name: AuthManager
   m_TagString: Untagged
@@ -792,20 +792,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1644899709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644899708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37bd1261579f7c64f8b77947a48b3db0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  emailField: {fileID: 1981539110}
-  passField: {fileID: 390474876}
 --- !u!4 &1644899710
 Transform:
   m_ObjectHideFlags: 0
@@ -821,6 +807,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1644899711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644899708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7a29d731b36d343909ff31b42bc5b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emailField: {fileID: 1981539110}
+  passField: {fileID: 390474876}
 --- !u!1 &1645994750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,7 +1062,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1644899709}
+      - m_Target: {fileID: 1644899711}
         m_TargetAssemblyTypeName: AuthManager, Assembly-CSharp
         m_MethodName: register
         m_Mode: 1
@@ -1366,7 +1366,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1644899709}
+      - m_Target: {fileID: 1644899711}
         m_TargetAssemblyTypeName: AuthManager, Assembly-CSharp
         m_MethodName: login
         m_Mode: 1

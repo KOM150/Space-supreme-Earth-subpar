@@ -217,9 +217,15 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< HEAD
+  - {fileID: 1171993750}
+  - {fileID: 2126980975}
+  - {fileID: 1363831536}
+=======
   - {fileID: 2126980975}
   - {fileID: 1363831536}
   - {fileID: 1171993750}
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -349,6 +355,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 5803308952387729385, guid: b560745ce67eb74498fc6800ed24ada1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+=======
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
     - target: {fileID: 5803308952387955921, guid: b560745ce67eb74498fc6800ed24ada1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -389,11 +402,59 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 7154904358619745205, guid: b560745ce67eb74498fc6800ed24ada1, type: 3}
+      propertyPath: Bolt
+      value: 
+      objectReference: {fileID: 146826, guid: 1240db91d7f614a458b2445b4f6c83dd, type: 3}
+    - target: {fileID: 7154904358619745205, guid: b560745ce67eb74498fc6800ed24ada1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5803308952387729385, guid: b560745ce67eb74498fc6800ed24ada1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 579094839}
+  m_SourcePrefab: {fileID: 100100000, guid: b560745ce67eb74498fc6800ed24ada1, type: 3}
+--- !u!1 &579094837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5803308952387729385, guid: b560745ce67eb74498fc6800ed24ada1, type: 3}
+  m_PrefabInstance: {fileID: 579094836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &579094838 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5803308952387850765, guid: b560745ce67eb74498fc6800ed24ada1, type: 3}
+  m_PrefabInstance: {fileID: 579094836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &579094839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579094837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123a50de3bcb6e24e987706d0b4468a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 13
+  Bolt: {fileID: 146826, guid: 1240db91d7f614a458b2445b4f6c83dd, type: 3}
+  shotSpawn: {fileID: 579094838}
+  fireRate: 0.25
+=======
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b560745ce67eb74498fc6800ed24ada1, type: 3}
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
 --- !u!1 &719034975
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,7 +503,11 @@ GameObject:
   - component: {fileID: 1171993752}
   - component: {fileID: 1171993751}
   m_Layer: 5
+<<<<<<< HEAD
+  m_Name: Title Text
+=======
   m_Name: Score Text
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -521,7 +586,11 @@ GameObject:
   - component: {fileID: 1363831538}
   - component: {fileID: 1363831537}
   m_Layer: 5
+<<<<<<< HEAD
+  m_Name: Memo Text
+=======
   m_Name: Restart Text
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -579,7 +648,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
+<<<<<<< HEAD
+  m_Text: Make Sure you complete the mission!
+=======
   m_Text: Make Sure you complete the mission !
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
 --- !u!222 &1363831538
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -636,6 +709,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 4492095420160872, guid: bc4f131daaeac0b4c8d16fe7dea3e46a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+=======
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
     - target: {fileID: 1258850129754637805, guid: bc4f131daaeac0b4c8d16fe7dea3e46a, type: 3}
       propertyPath: m_Name
       value: Boundary (Memory)
@@ -919,7 +999,10 @@ GameObject:
   - component: {fileID: 1687857890}
   - component: {fileID: 1687857894}
   - component: {fileID: 1687857892}
+<<<<<<< HEAD
+=======
   - component: {fileID: 1687857891}
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -942,6 +1025,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 719034976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
 --- !u!114 &1687857891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -956,6 +1041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: -0.25
   tileSizeZ: 30
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
 --- !u!23 &1687857892
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1074,12 +1160,23 @@ MonoBehaviour:
   - {fileID: 7666728058332080496, guid: f0b1c9bfb9d1d1644b650ed94cd82808, type: 3}
   spawnValues: {x: 6, y: 0, z: 16}
   hazardCount: 10
+<<<<<<< HEAD
+  startWait: 1
+  spawnWait: 0.75
+  waveWait: 4
+  titleText: {fileID: 1171993751}
+  memoText: {fileID: 2126980976}
+  subtitleText: {fileID: 1363831537}
+  gameOver: 0
+  gameOverScore: 0
+=======
   spawnWait: 0.75
   startWait: 1
   waveWait: 4
   scoreText: {fileID: 1171993751}
   restartText: {fileID: 1363831537}
   gameOverText: {fileID: 2126980976}
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
 --- !u!4 &1904691132
 Transform:
   m_ObjectHideFlags: 0
@@ -1308,7 +1405,11 @@ GameObject:
   - component: {fileID: 2126980977}
   - component: {fileID: 2126980976}
   m_Layer: 5
+<<<<<<< HEAD
+  m_Name: Subtitle Text
+=======
   m_Name: Game Over Text
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1346,7 +1447,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD
+  m_Color: {r: 0.9528302, g: 0.78347087, b: 0.0059925243, a: 1}
+=======
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1355,7 +1460,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+    m_FontSize: 45
+=======
     m_FontSize: 50
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0

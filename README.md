@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# Space-supreme--Earth-subpar
+ 키우기 게임
+=======
 # Space-supreme--Earth-subpar 게임
 이 프로젝트는 "우주 최강! 지구 최약체"라는 게임을 개발하는 레포지토리입니다.
 > 게임 설명하기  
@@ -21,3 +25,4 @@
 
 ## Tycoon Game Version 1.  
 
+>>>>>>> a7142496aaa562afeeac970070425f555535135c

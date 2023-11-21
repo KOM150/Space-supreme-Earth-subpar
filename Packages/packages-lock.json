@@ -67,6 +67,18 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
+    "com.unity.recorder": {
+      "version": "4.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.timeline": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+=======
+>>>>>>> a7142496aaa562afeeac970070425f555535135c
     "com.unity.settings-manager": {
       "version": "2.0.1",
       "depth": 2,

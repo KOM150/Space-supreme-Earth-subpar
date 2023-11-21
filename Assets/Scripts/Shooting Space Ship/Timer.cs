@@ -5,25 +5,25 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    //ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½
-    public float LimitTime; //ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
-    public Text text_Timer; //È­ï¿½é¿¡ ï¿½Ã°ï¿½ Ç¥ï¿½ï¿½
-    public GameObject player; //ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
+    //½Ã°£ Á¦ÇÑ
+    public float LimitTime; //Á¦ÇÑ ½Ã°£
+    public Text text_Timer; //È­¸é¿¡ ½Ã°£ Ç¥½Ã
+    public GameObject player; //ÇÃ·¹ÀÌ¾î ¿ÀºêÁ§Æ®
     public GameController gameController;
 
     // Start is called before the first frame update
     void Start()
     {
-        // gameController ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "GameController" ï¿½Â±×¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ò´ï¿½
+        // gameController º¯¼ö¿¡ "GameController" ÅÂ±×¸¦ °¡Áø °ÔÀÓ ¿ÀºêÁ§Æ®¸¦ ÇÒ´ç
         GameObject gameControllerObject = GameObject.FindGameObjectWithTag("GameController");
 
         if (gameControllerObject != null)
         {
-            //ï¿½ï¿½ï¿½Ó°ï¿½ GameController ï¿½Ó¼ï¿½ ï¿½Ò´ï¿½ > ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+            //»õ·Ó°Ô GameController ¼Ó¼º ÇÒ´ç > °ÔÀÓ ³»¿¡¼­ °ÔÀÓ »óÅÂ ¹× Á¡¼ö¸¦ ¾÷µ¥ÀÌÆ®ÇÏ±â À§ÇØ »ç¿ë
             gameController = gameControllerObject.GetComponent<GameController>();
         }
 
-        // gameControllerï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+        // gameController¸¦ Ã£Áö ¸øÇÑ °æ¿ì µð¹ö±× ¸Þ½ÃÁö Ãâ·Â
         if (gameController == null)
         {
             Debug.Log("Can't find 'GameController' script");
@@ -33,20 +33,18 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ß°ï¿½
+        //Á¦ÇÑ ½Ã°£ Ãß°¡
         if (!gameController.gameOver)
         {
             if (LimitTime <= 0)
             {
                 player.SetActive(false);
-
-                gameController.GameWin();
-
+                gameController.GameOver();
             }
             else
             {
                 LimitTime -= Time.deltaTime;
-                text_Timer.text = "ï¿½Ã°ï¿½ : " + Mathf.Round(LimitTime);
+                text_Timer.text = "½Ã°£ : " + Mathf.Round(LimitTime);
             }
         }
     }
